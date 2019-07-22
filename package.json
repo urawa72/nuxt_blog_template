@@ -1,0 +1,34 @@
+{
+  "name": "nuxt_blog_template",
+  "version": "1.0.0",
+  "description": "nuxt_blog_template",
+  "author": "urawa72",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "md": "processmd contents/posts/markdown/**/*.md --stdout --outputDir contents/posts/json > contents/posts/summary.json",
+    "generate": "nuxt generate",
+    "deploy": "processmd contents/posts/markdown/**/*.md --stdout --outputDir contents/posts/json > contents/posts/summary.json && nuxt generate"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "@nuxtjs/axios": "^5.5.4",
+    "@nuxtjs/google-analytics": "^2.2.0",
+    "@nuxtjs/markdownit": "^1.2.6",
+    "@nuxtjs/pwa": "^3.0.0-beta.16",
+    "@nuxtjs/sitemap": "^1.2.0",
+    "@nuxtjs/style-resources": "^0.1.2",
+    "glob": "^7.1.4",
+    "highlight.js": "^9.15.8",
+    "nuxt": "^2.0.0",
+    "vuex": "^3.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "processmd": "^4.4.2",
+    "sass-loader": "^7.1.0"
+  }
+}

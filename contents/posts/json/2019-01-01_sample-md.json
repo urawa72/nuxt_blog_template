@@ -1,0 +1,16 @@
+{
+  "id": 1,
+  "title": "Nuxt.jsでブログをつくる",
+  "created_at": "2019-01-01T00:00:00.000Z",
+  "updated_at": "2019-01-01T00:00:00.000Z",
+  "draft": false,
+  "description": "Nuxt.jsでつくったブログのテンプレート",
+  "tags": "JavaScript,Nuxt.js",
+  "bodyContent": "Nuxt.jsでブログをつくる。\n\n* samplesamplesample\n* samplesamplesample\n* samplesamplesample\n\n# sample h1\nsamplesamplesample\n\n [sample Link](https://blog.urawadev.com/)\n\nコードブロック\n```bash\npages/\n  posts/\n    - _date/\n      - _slug/\n        index.vue\n```\n\nコードブロックも文中のコード```Nuxt.js```もcssでカスタマイズ可能。\n\n\n## sample h2\nsamplesamplesample\n\n\n### sample h3\nsamplesamplesample",
+  "bodyHtml": "<p>Nuxt.jsでブログをつくる。</p>\n<ul>\n<li>samplesamplesample</li>\n<li>samplesamplesample</li>\n<li>samplesamplesample</li>\n</ul>\n<h1>sample h1</h1>\n<p>samplesamplesample</p>\n<p><a href=\"https://blog.urawadev.com/\">sample Link</a></p>\n<p>コードブロック</p>\n<pre><code class=\"hljs\">pages/\n  posts/\n    - _date/\n      - _slug/\n        index.vue</code></pre><p>コードブロックも文中のコード<code>Nuxt.js</code>もcssでカスタマイズ可能。</p>\n<h2>sample h2</h2>\n<p>samplesamplesample</p>\n<h3>sample h3</h3>\n<p>samplesamplesample</p>\n",
+  "dir": "contents/posts/json",
+  "base": "2019-01-01_sample-md.json",
+  "ext": ".json",
+  "sourceBase": "2019-01-01_sample-md.md",
+  "sourceExt": ".md"
+}

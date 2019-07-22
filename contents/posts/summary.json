@@ -1,0 +1,21 @@
+{
+  "fileMap": {
+    "contents/posts/json/2019-01-01_sample-md.json": {
+      "id": 1,
+      "title": "Nuxt.jsでブログをつくる",
+      "created_at": "2019-01-01T00:00:00.000Z",
+      "updated_at": "2019-01-01T00:00:00.000Z",
+      "draft": false,
+      "description": "Nuxt.jsでつくったブログのテンプレート",
+      "tags": "JavaScript,Nuxt.js",
+      "dir": "contents/posts/json",
+      "base": "2019-01-01_sample-md.json",
+      "ext": ".json",
+      "sourceBase": "2019-01-01_sample-md.md",
+      "sourceExt": ".md"
+    }
+  },
+  "sourceFileArray": [
+    "contents/posts/markdown/2019-01-01_sample-md.md"
+  ]
+}
