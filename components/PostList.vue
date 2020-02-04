@@ -1,10 +1,12 @@
 <template>
-  <div v-if="postList.length > 0">
-    <Post v-for="post in postList" :post="post":key="post.id" />
-    <div class="more" v-if="isActive" @click="getMore()">More...</div>
-  </div>
-  <div v-else>
-    <p style="text-align: center;">Loading...</p>
+  <div class="post-list">
+    <template v-if="postList.length > 0">
+      <Post v-for="post in postList" :post="post":key="post.id" />
+      <div class="post-list__more" v-if="isActive" @click="getMore()">More...</div>
+    </template>
+    <template v-else>
+      <p style="text-align: center;">Loading...</p>
+    </template>
   </div>
 </template>
 
@@ -49,14 +51,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.more {
-  padding: 10px 0;
-  text-align: center;
-  cursor: pointer;
-  color: gray;
-  &:hover {
-    opacity: .6;
-    transition: .2s;
+.post-list {
+  &__more {
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    color: gray;
+    &:hover {
+      opacity: .6;
+      transition: .2s;
+    }
   }
 }
 </style>

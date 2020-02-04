@@ -1,13 +1,13 @@
 <template>
-  <div class="post-wrap">
-    <div class="post-title">
-      <a :href="formatUrl" class="post-link">{{ post.title }}</a>
+  <div class="post">
+    <div class="post__title">
+      <a :href="formatUrl" class="post__link">{{ post.title }}</a>
     </div>
-    <div class="post-date">
+    <div class="post__date">
       {{ formatDate }}
     </div>
-    <div class="post-tags-wrap" v-for="tag in formatTags">
-      <div class="post-tag">
+    <div class="post__tags-wrap" v-for="tag in formatTags">
+      <div class="post__tag">
         {{ tag }}
       </div>
     </div>
@@ -43,34 +43,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.post-wrap {
+.post {
   padding: 30px 0;
-}
-.post-title {
-  font-size: 24px;
-  font-weight: 500;
-}
-.post-link {
-  color: #444;
-  text-decoration: none;
-  &:hover {
-    opacity: .6;
-    transition: .2s;
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
   }
-}
-.post-date {
-  font-size: .8rem;
-  color: gray;
-  padding: 10px 0;
-}
-.post-tags-wrap {
-  display: inline-block;
-  padding: 10px 0;
-}
-.post-tag {
-  font-size: .8rem;
-  padding: 0 .5rem;
-  margin: 0 .2rem;
-  border: 1px solid #d2d7e5;
+  &__link {
+    color: #444;
+    text-decoration: none;
+    &:hover {
+      opacity: .6;
+      transition: .2s;
+    }
+  }
+  &__date {
+    font-size: .8rem;
+    color: gray;
+    padding: 10px 0;
+  }
+  &__tags-wrap {
+    display: inline-block;
+    padding: 10px 0;
+  }
+  &__tag {
+    font-size: .8rem;
+    padding: 0 .5rem;
+    margin: 0 .2rem;
+    border: 1px solid #d2d7e5;
+  }
 }
 </style>

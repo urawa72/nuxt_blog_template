@@ -1,19 +1,16 @@
 <template>
   <div class="content">
     <div class="page-title">Articles</div>
-    <Posts />
+    <PostList />
   </div>
 </template>
 
 <script>
-import Posts from '~/components/Posts.vue'
+import PostList from '~/components/PostList.vue'
 
 export default {
   components: {
-    Posts
+    PostList
   }
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

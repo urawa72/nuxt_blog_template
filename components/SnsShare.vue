@@ -1,8 +1,8 @@
 <template>
   <div class="sns-list">
-    <a class="sns-link" :href="getUrl(twitter)" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
-    <a class="sns-link" :href="getUrl(hatebu)" target="_blank" rel="nofollow"><b>B!</b></a>
-    <a class="sns-link" :href="getUrl(pocket)" target="_blank" rel="nofollow"><i class="fab fa-get-pocket"></i></a>
+    <a class="sns-list__link" :href="getUrl(twitter)" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a>
+    <a class="sns-list__link" :href="getUrl(hatebu)" target="_blank" rel="nofollow"><b>B!</b></a>
+    <a class="sns-list__link" :href="getUrl(pocket)" target="_blank" rel="nofollow"><i class="fab fa-get-pocket"></i></a>
   </div>
 </template>
 
@@ -43,12 +43,12 @@ export default {
   list-style: none;
   padding: 30px 0 10px;
   margin: auto;
- }
- .sns-link {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #000;
-  opacity: .7;
-  margin: 0 10px;
- }
+  &__link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000;
+    opacity: .7;
+    margin: 0 10px;
+  }
+}
 </style>
