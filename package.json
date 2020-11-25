@@ -21,7 +21,7 @@
     "@nuxtjs/sitemap": "^1.2.0",
     "@nuxtjs/style-resources": "^0.1.2",
     "glob": "^7.1.4",
-    "highlight.js": "^9.15.8",
+    "highlight.js": "^10.1.2",
     "nuxt": "^2.0.0",
     "vuex": "^3.1.1"
   },
